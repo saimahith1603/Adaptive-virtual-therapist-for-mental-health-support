@@ -6,4 +6,4 @@ An intelligent mental health support system powered by AI, Machine Learning, and
 
 ## 📌 Project Overview
 
-Millions of people globally face barriers to timely and affordable mental healthcare, especially in rural and under-resourced areas. This project addresses that gap by offering a
+Millions of people globally face barriers to timely and affordable mental healthcare, especially in rural and under-resourced areas.
