@@ -1,0 +1,204 @@
+
+/* Custom scrollbar */
+.scrollbar-light::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-light::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.scrollbar-light::-webkit-scrollbar-thumb {
+  background: #ccfbf1;
+  border-radius: 10px;
+}
+
+.scrollbar-light::-webkit-scrollbar-thumb:hover {
+  background: #4CC9C8;
+}
+
+.scrollbar-dark::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: #2d3748;
+  border-radius: 10px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 10px;
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: #4CC9C8;
+}
+
+/* Animation delays */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Gradient text */
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, #4CC9C8, #a78bfa);
+}
+
+/* Blob animation */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+/* Pulsating dot animation */
+.pulsating-dot {
+  position: relative;
+}
+
+.pulsating-dot::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #4CC9C8;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+}
+
+/* Sound wave animation */
+@keyframes sound-wave {
+  0%, 100% {
+    height: 8px;
+  }
+  50% {
+    height: 16px;
+  }
+}
+
+.animate-sound-wave {
+  animation: sound-wave 1s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Typing indicator animation */
+@keyframes typing {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+.animate-typing {
+  animation: typing 1s infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Voice wave animation */
+@keyframes voice-wave {
+  0%, 100% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.2);
+  }
+}
+
+.voice-wave {
+  display: inline-block;
+  width: 3px;
+  height: 15px;
+  margin: 0 1px;
+  background-color: currentColor;
+  border-radius: 2px;
+  animation: voice-wave 1s ease-in-out infinite;
+}
+
+.voice-wave:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.voice-wave:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.voice-wave:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.voice-wave:nth-child(5) {
+  animation-delay: 0.8s;
+}
